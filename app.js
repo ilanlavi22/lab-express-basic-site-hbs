@@ -48,4 +48,4 @@ app.use((req, res) => {
     res.status(404).render('404', { '404': true });
 });
 
-app.listen(process.env.PORT || port, () => console.log("running"));
+app.listen(process.env.PORT || port);
