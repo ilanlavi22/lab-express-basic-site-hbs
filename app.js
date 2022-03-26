@@ -1,5 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
+const port = 3000;
 
 // where partial templates are located
 hbs.registerPartials(__dirname + '/views/partials');
@@ -47,4 +48,4 @@ app.use((req, res) => {
     res.status(404).render('404', { '404': true });
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || port, () => console.log("running"));
