@@ -160,7 +160,26 @@ article button {
   text-align: center;
   margin: 3rem auto 0;
 }
+.gallery > div {
+  margin-block: 1rem;
+}
+footer {
+  background-color: var(--clr-grey-3);
+  align-self: end;
+  text-align: center;
+  padding: 2rem;
+  color: var(--clr-grey-10);
+}
 @media screen and (min-width: 800px) {
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content;
+  }
+  header,
+  main {
+    margin: 3rem auto;
+  }
   main {
     display: grid;
     gap: 4rem;
@@ -178,5 +197,8 @@ article button {
   nav a:hover,
   nav a.active {
     box-shadow: -2px 0 var(--clr-primary-5);
+  }
+  article button {
+    display: inline-block;
   }
 }
