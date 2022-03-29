@@ -1,11 +1,11 @@
-<h1>Home Page</h1>
-
-<section>
-  <div class="content-container">
-    <div class="gallery">
+<section class='about'>
+  <article>
+    <h3>{{title}}</h3>
+    <h4>cur</h4>
+    <div class='gallery'>
       {{#each photos}}
-        <div><img src="{{this}}" /></div>
+        <div><img src='{{this}}' /></div>
       {{/each}}
     </div>
-  </div>
+  </article>
 </section>

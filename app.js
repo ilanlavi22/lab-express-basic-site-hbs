@@ -19,7 +19,7 @@ app.use(express.static('public'));
 app.locals.pageTitle = 'NEH Website';
 
 app.get('/', (req, res) => {
-    res.render('home', { home: true });
+    res.render('home', { home: true, title: 'Experience' });
 });
 app.get('/about', (req, res) => {
 
@@ -40,6 +40,7 @@ app.get('/about', (req, res) => {
 app.get('/gallery', (req, res) => {
     res.render('gallery', {
         gallery: true,
+        title: 'Gallery',
         photos: ['01.jpg', '02.jpg', '03.jpg', '04.jpg']
     });
 });

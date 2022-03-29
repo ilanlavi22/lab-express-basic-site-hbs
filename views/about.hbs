@@ -1,17 +1,21 @@
-<h1>{{title}}</h1>
-<p>{{name}} born ({{bornYear}}) in {{city}}</p>
-<p>{{bio}}</p>
-
-<ul class="booklist">
-  {{#each books}}
-    <li>
-      <p>{{name}}, {{pages}} pages, Rating: {{rating}}</p>
-      <p>{{genres}}</p>
-      {{#if isBestSeller}}
-        <p>Best Seller</p>
-      {{else}}
-        <p>Unknown</p>
-      {{/if}}
-    </li>
-  {{/each}}
-</ul>
+<section class='about'>
+  <article>
+    <h3>{{title}}</h3>
+    <h4>cur</h4>
+    <p>{{name}} born ({{bornYear}}) in {{city}}</p>
+    <p>{{bio}}</p>
+    <ul class='booklist'>
+      {{#each books}}
+        <li>
+          <p>{{name}}, {{pages}} pages, Rating: {{rating}}</p>
+          <p>{{genres}}</p>
+          {{#if isBestSeller}}
+            <p>Best Seller</p>
+          {{else}}
+            <p>Unknown</p>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  </article>
+</section>
